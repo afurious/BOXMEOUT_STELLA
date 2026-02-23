@@ -13,6 +13,7 @@ import tradingRoutes from './routes/trading.js';
 import treasuryRoutes from './routes/treasury.routes.js';
 import referralsRoutes from './routes/referrals.routes.js';
 import leaderboardRoutes from './routes/leaderboard.routes.js';
+import transactionsRoutes from './routes/transactions.routes.js';
 
 // Import Redis initialization
 import {
@@ -213,6 +214,9 @@ app.use('/api/referrals', referralsRoutes);
 
 // Leaderboard routes
 app.use('/api/leaderboard', leaderboardRoutes);
+
+// Transaction routes
+app.use('/api/transactions', transactionsRoutes);
 
 // =============================================================================
 // ERROR HANDLING - UPDATED WITH NEW ERROR HANDLER
